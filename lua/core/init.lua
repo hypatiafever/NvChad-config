@@ -7,6 +7,7 @@ g.nvchad_theme = config.ui.theme
 g.base46_cache = vim.fn.stdpath "data" .. "/nvchad/base46/"
 g.toggle_theme_icon = "   "
 g.transparency = config.ui.transparency
+vim.api.nvim_set_hl(0, '@lsp.type.variable.cpp', {fg="#f7f7c6"})
 
 -------------------------------------- options ------------------------------------------
 opt.laststatus = 3 -- global statusline

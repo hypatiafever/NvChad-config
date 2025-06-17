@@ -1,0 +1,14 @@
+{
+  "Basic iostream" {
+    "prefix": ["iosnam", "iostream"],
+    "body": [
+      "#include <iostream>",
+      "",
+      "using namespace std;",
+      "",
+      "int main() {}",
+    ],
+    "description": "Basic code for an iostream app",
+    "scope": "cpp"
+  }
+}

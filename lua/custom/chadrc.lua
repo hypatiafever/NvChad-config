@@ -2,19 +2,19 @@
 local M = {}
 
 M.ui = {
-  theme = 'catppuccin',
+  theme = 'palenight',
   hl_override = {
     Comment = { italic = true },
     ["@comment"] = { italic = true },
   },
   -- akjsdbnajcbali
   changed_themes = {
-    catppuccin = {
+    palenight = {
       base_30 = {
-        grey_fg = "#797985"
+        grey_fg = "#797985",
       },
       base_16 = {
-        base03 = "#797985"
+        base03 = "#797985",
       }
     }
   }
