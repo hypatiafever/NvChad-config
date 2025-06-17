@@ -127,7 +127,7 @@ local plugins = {
         "black",
         "debugpy",
         "mypy",
-        "ruff-lsp",
+        "ruff",
         "pyright",
       }
     }

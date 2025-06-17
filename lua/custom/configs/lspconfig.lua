@@ -5,7 +5,7 @@ local lspconfig = require("lspconfig")
 
 local servers = {
   "pyright",
-  "ruff_lsp",
+  "ruff",
 }
 
 lspconfig.clangd.setup {
