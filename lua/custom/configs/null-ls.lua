@@ -3,7 +3,9 @@ local null_ls = require("null-ls")
 
 local opts = {
   sources = {
+    -- c++
     null_ls.builtins.formatting.clang_format,
+    -- python
     null_ls.builtins.formatting.black,
     null_ls.builtins.diagnostics.mypy.with({
       extra_args = function()
@@ -12,6 +14,7 @@ local opts = {
       end,
     }),
   },
+
   on_attach = function(client, bufnr)
     if client.supports_method("textDocument/formatting") then
       vim.api.nvim_clear_autocmds({

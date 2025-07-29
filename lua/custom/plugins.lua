@@ -1,17 +1,6 @@
 local plugins = {
   -- utilities
   {
-
-    "L3MON4D3/LuaSnip",
-    event = "VeryLazy",
-    -- follow latest release.
-    version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-    -- install jsregexp (optional!).
-    build = "make install_jsregexp",
-
-    require("luasnip.loaders.from_vscode").load_standalone({path="./configs/snippets/cpp.code-snippets"})
-  },
-  {
     "jake-stewart/multicursor.nvim",
     branch = "1.0",
     event = "VeryLazy",
@@ -98,6 +87,10 @@ local plugins = {
       require "custom.configs.lspconfig"
     end,
   },
+  {
+    "patrickvane/shfmt",
+    event = "VeryLazy",
+  },
   -- ------------------------------
   -- shitty fun little stuff
   {
@@ -123,6 +116,8 @@ local plugins = {
         "clangd",
         "clang-format",
         "codelldb",
+        -- bash formatting
+        "bash-language-server",
         -- python debugging and formatting
         "black",
         "debugpy",

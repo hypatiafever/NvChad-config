@@ -16,6 +16,12 @@ lspconfig.clangd.setup {
   capabilities = capabilities
 }
 
+lspconfig.bashls = {
+  cmd = { 'bash-language-server', 'start' },
+  filetypes = { 'bash', 'sh' }
+}
+vim.lsp.enable 'bashls'
+
 for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup({
     on_attach = on_attach,
